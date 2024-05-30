@@ -2,7 +2,6 @@
   "name": "web_crawler",
   "version": "1.0.0",
   "description": "JS Web crawler",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node main.js",
