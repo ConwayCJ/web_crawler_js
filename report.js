@@ -46,9 +46,9 @@ const report = (obj) => {
     const url = sortable[i][0]
     const count = sortable[i][1]
     setTimeout(() => {
-      console.log(`Found ${count} internal links to ${url}.`)
+      console.log(`Found ${count} internal links to ${url}`)
     },400)
   }
 }
 
-report(obj)
+export { report }

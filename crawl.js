@@ -2,7 +2,6 @@ import { JSDOM } from 'jsdom'
 
 const normalizeURL = (url) => {
   const urlObj = new URL(url)
-  console.log(url)
   let fullPath = `${urlObj.protocol}//${urlObj.host}${urlObj.pathname}`
   if (fullPath.slice(-1) === '/') {
     fullPath = fullPath.slice(0, -1)
@@ -33,7 +32,6 @@ const getURLsFromHTML = (htmlBody, baseURL) => {
 
 const getHTMLBody = async (rootURL) => {
   let res
-  console.log(rootURL)
   try {
     res = await fetch(rootURL, {
       method: "GET"
