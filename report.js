@@ -45,9 +45,7 @@ const report = (obj) => {
   for (let i = sortable.length - 1; i > 0; i--) {
     const url = sortable[i][0]
     const count = sortable[i][1]
-    setTimeout(() => {
-      console.log(`Found ${count} internal links to ${url}`)
-    },400)
+    console.log(`Found ${count} internal links to ${url}`)
   }
 }
 
