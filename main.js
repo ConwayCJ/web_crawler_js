@@ -1,4 +1,5 @@
 import { crawlPage } from "./crawl.js"
+import { report } from "./report.js"
 const args = process.argv
 
 async function main(url) {  
@@ -20,7 +21,7 @@ async function main(url) {
   console.log(`Starting crawl of website: ${baseURL}`)
   const pages = await crawlPage(baseURL)
 
-  console.log(pages)
+  report(pages)
 }
 
 main(args)
